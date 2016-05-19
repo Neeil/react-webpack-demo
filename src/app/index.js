@@ -4,6 +4,6 @@ var HelloComponent = require('./components/HelloComponent.js');
 
 // render the components to web pages.
 ReactDOM.render(
-    <HelloComponent/>,
+    <HelloComponent name={"Jack"}/>,
     document.getElementById("greeting")
 );
