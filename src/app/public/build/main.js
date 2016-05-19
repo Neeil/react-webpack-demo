@@ -8,11 +8,7 @@ webpackJsonp([0,1],[
 	var ReactDOM = __webpack_require__(33);
 	var HelloComponent = __webpack_require__(168);
 
-	ReactDOM.render(React.createElement(
-	    'div',
-	    null,
-	    'Hello World'
-	), document.getElementById("greeting"));
+	ReactDOM.render(React.createElement(HelloComponent, null), document.getElementById("greeting"));
 
 /***/ },
 /* 1 */
@@ -20168,8 +20164,8 @@ webpackJsonp([0,1],[
 
 	var React = __webpack_require__(1);
 
-	module.exports = React.createClass({
-	    displayName: 'exports',
+	var HelloComponent = React.createClass({
+	    displayName: 'HelloComponent',
 
 	    getDefaultProps: function getDefaultProps() {
 	        return {
@@ -20179,14 +20175,20 @@ webpackJsonp([0,1],[
 
 	    render: function render() {
 	        return React.createElement(
-	            'p',
+	            'div',
 	            null,
-	            'Hello ',
-	            this.props.name,
-	            ' '
+	            React.createElement(
+	                'p',
+	                null,
+	                'Hello ',
+	                this.props.name,
+	                ' '
+	            )
 	        );
 	    }
 	});
+
+	module.exports = HelloComponent;
 
 /***/ }
 ]);

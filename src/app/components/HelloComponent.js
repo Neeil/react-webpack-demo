@@ -17,7 +17,7 @@
 
 var React = require('react');
 
-module.exports = React.createClass({
+var HelloComponent = React.createClass({
    getDefaultProps : function(){
        return {
            name : 'Neil'
@@ -26,7 +26,11 @@ module.exports = React.createClass({
    
    render : function(){
     return (
-        <p>Hello {this.props.name} </p>
+        <div>
+            <p>Hello {this.props.name} </p>
+        </div>
     );   
    }
 });
+
+module.exports = HelloComponent;

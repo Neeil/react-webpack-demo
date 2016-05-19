@@ -4,11 +4,6 @@
     "description": "A selt learn react-webpack-demo",
     "main": "app.js",
     "license": "GPL 3.0",
-    "scripts": {
-        "prestart": "npm build",
-        "build":"webpack -- progress --colors",
-        "start":"webpack-dev-server --hot --progress --colors"
-    },
     "dependencies": {
         "react":"^15.0.2",
         "react-dom":"^15.0.2",
@@ -30,5 +25,10 @@
         "react-hot-loader":"^1.3.0",
         "webpack":"^1.13.0",
         "webpack-dev-server": "^1.14.1"
+    },
+    "scripts": {
+        "prestart": "npm build",
+        "build": "webpack --progress --colors",
+        "start": "webpack-dev-server --hot --progress --colors"
     }
 }

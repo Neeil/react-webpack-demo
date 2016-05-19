@@ -1,8 +1,8 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
-var HelloComponent = require('./components/HelloComponent');
+var HelloComponent = require('./components/HelloComponent.js');
 
 ReactDOM.render(
-    <div>Hello World</div>,
+    <HelloComponent/>,
     document.getElementById("greeting")
 );
