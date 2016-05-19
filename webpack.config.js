@@ -14,7 +14,7 @@ module.exports = {
     },
     output:{
         path : './src/app/public/build',
-        filename : "main.js"
+        filename : "[name].js"
     },
     module:{
         loaders:[
