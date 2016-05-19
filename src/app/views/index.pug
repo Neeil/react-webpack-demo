@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    p Welcome to #{title}
+    #greeting
+    script(src='/build/main.js')
+    p
+        a(href='/login') Login
+        span |
+        a(href='/register') &nbsp; Reister
+    
+    
